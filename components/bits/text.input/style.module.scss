@@ -1,0 +1,10 @@
+.TextInputBit {
+	flex: 0 1 auto;
+	overflow: hidden;
+	height: 48px;
+	transition: border-color ease .2s;
+	align-items: center;
+	width: auto;
+	max-width: 100%;
+	align-self: stretch;
+}
