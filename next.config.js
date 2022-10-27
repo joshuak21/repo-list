@@ -11,10 +11,15 @@ const nextConfig = {
 		],
 		indentedSyntax: false,
 	},
+	compiler: {
+		styledComponents: true,
+	},
 
 	pageExtensions: [
+		'page.js', // page and api route
 		'page.tsx', // page route
-	]
+		'page.ts', // api route
+	],
 }
 
 module.exports = nextConfig

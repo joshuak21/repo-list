@@ -17,6 +17,8 @@ export interface PropsInterface {
 
 	id?: string,
 
+	onClick?: (event: React.MouseEvent<HTMLDivElement>) => void,
+
 	children?: React.ReactNode,
 
 	className?: string,
@@ -34,6 +36,8 @@ function _BoxBit(props: PropsInterface): React.ReactElement<HTMLDivElement> {
 				${props.centering ? SCSS.centering : ''}
 				${props.className || ''}
 			`) || undefined }
+
+			onClick={ props.onClick }
 
 			style={ props.style }
 		>

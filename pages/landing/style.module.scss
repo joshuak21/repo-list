@@ -1,0 +1,86 @@
+.innerContainer {
+	width: 100%;
+	max-width: 800px;
+	// align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titleContainer {
+	margin: 24px 0;
+	& .title {
+		text-align: center;
+		font-size: 44px;
+		line-height: 52px;
+	}
+}
+
+
+.button {
+	height: 48px;
+	margin-left: 16px;
+	padding: 0 36px;
+	border: 1px solid black;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		background-color: black;
+		transition: .3s ease-in-out;
+		& > p {
+			color: white;
+		}
+	}
+}
+
+.historiesContainer {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	& .historyTitle {
+		text-align: center;
+	}
+
+	& .historiesDataContainer {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		& .historyDataContainer {
+			border: 1px solid grey;
+			border-radius: 2px;
+			padding: 4px 12px;
+			margin-right: 8px;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+.datasContainer {
+	margin: 48px 0;
+
+	& .dataContainer {
+		padding: 16px 24px;
+		border: 1px solid black;
+		margin-bottom: 16px;
+
+		& .navigate {
+			margin-top: 6px;
+
+			& > a {
+				font-size: 12px;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.clear {
+	margin-left: 8px;
+	cursor: pointer;
+	align-self: flex-end;
+	& > p {
+		font-size: 12px;
+	}
+}
